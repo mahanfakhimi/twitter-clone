@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import Home from "./pages/Home";
 
-console.log("test log");
-
 const App = () => {
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) document.documentElement.classList.add("dark");
