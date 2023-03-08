@@ -1,0 +1,18 @@
+* {
+  font-family: "poppins";
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply rounded-full appearance-none w-fit bg-white shadow-[-10000px_0_0_10000px_white];
+}
