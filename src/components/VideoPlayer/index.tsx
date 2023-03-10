@@ -4,7 +4,6 @@ import videoSrc from "../../video.mp4";
 import PlayOrPauseButton from "./PlayOrPauseButton";
 import MuteOrUnMuteButton from "./MuteOrUnMuteButton";
 import FullScreenOrFullScreenExitButton from "./FullScreenOrFullScreenExitButton";
-import A from "./A";
 
 const VideoPlayer = () => {
   const videoPlayerRef = useRef<HTMLDivElement>(null);
@@ -43,7 +42,6 @@ const VideoPlayer = () => {
               <MuteOrUnMuteButton videoRef={videoRef} isMuted={isMuted} setIsMuted={setIsMuted} />
               <FullScreenOrFullScreenExitButton videoPlayerRef={videoPlayerRef} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
             </div>
-            <A />
           </div>
         </div>
       </Transition>
